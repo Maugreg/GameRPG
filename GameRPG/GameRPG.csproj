@@ -4,4 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Filters\" />
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+
 </Project>
