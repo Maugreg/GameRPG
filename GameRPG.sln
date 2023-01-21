@@ -14,6 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{10AC94B9-E80F-43E7-B43A-A766F282A48F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRPG.Repository", "GameRPG.Repository\GameRPG.Repository.csproj", "{E96D1C95-3E05-4E6B-8A5C-97F4AB439252}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3D9F596C-16A4-4E51-9138-A8B923657EEE} = {3D9F596C-16A4-4E51-9138-A8B923657EEE}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Tests", "4 - Tests", "{B2475ED6-98CF-4CE5-A31C-F13242531907}"
 EndProject
