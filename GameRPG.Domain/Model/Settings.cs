@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GameRPG.Domain.Interfaces
+namespace GameRPG.Domain.Model
 {
-    public interface IProfessionRepository
+    internal class Settings
     {
     }
 }

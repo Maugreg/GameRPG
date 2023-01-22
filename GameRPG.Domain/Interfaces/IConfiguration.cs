@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameRPG.Domain.Interfaces
 {
-    public interface IProfessionRepository
+    internal interface IConfiguration
     {
     }
 }
