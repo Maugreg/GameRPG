@@ -11,7 +11,7 @@ namespace GameRPG.Infrastructure.Extensions
         public static string Exception => "exception";
         public static string Operation => "operation";
 
-        public static void CreateLogger(string serviceName, IConfiguration config)
+        public static void CreateLogger(string serviceName, GameRPG.Domain.Interfaces.IConfiguration config)
         {
 
             Log.Logger = new LoggerConfiguration()
