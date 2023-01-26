@@ -13,6 +13,10 @@ namespace GameRPG.Infrastructure
                      .As<IProfessionRepository>()
                      .InstancePerLifetimeScope();
 
+            builder.RegisterType<CharacterRepository>()
+         .As<ICharacterRepository>()
+         .InstancePerLifetimeScope();
+
             #endregion
 
         }

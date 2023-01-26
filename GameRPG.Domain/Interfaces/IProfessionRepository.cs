@@ -9,5 +9,6 @@ namespace GameRPG.Domain.Interfaces
     public interface IProfessionRepository
     {
         public Task<List<Profession>> GetAll();
+        public Task<Profession> GetById(int id);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using GameRPG.Application.Commands.CharacterCommand;
 using GameRPG.Application.Commands.ProfessionCommands;
 using MediatR;
 using System.Reflection;
@@ -13,6 +14,10 @@ namespace GameRPG.Application.AutofacModules
      .AsImplementedInterfaces();
 
             builder.RegisterAssemblyTypes(typeof(GetProfessionCommand).GetTypeInfo().Assembly)
+        .AsClosedTypesOf(typeof(IRequestHandler<,>));
+
+
+            builder.RegisterAssemblyTypes(typeof(GetCharacterCommand).GetTypeInfo().Assembly)
         .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
 

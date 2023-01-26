@@ -82,6 +82,8 @@ namespace GameRPG
             });
             #endregion
 
+            services.AddMemoryCache();
+
             var container = new ContainerBuilder();
             container.Populate(services);
 

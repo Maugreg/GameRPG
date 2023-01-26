@@ -11,11 +11,11 @@ namespace GameRPG.Repository
         {
             var listProfession = new List<Domain.Entities.Profession>();
 
-            listProfession.Add(new Domain.Entities.Profession { ProfessionName = "WARRIOR", Life = 20, Strong = 20, Dexterity = 5, Intelligence = 5 }) ;
+            listProfession.Add(new Domain.Entities.Profession { Id = 1, ProfessionName = "WARRIOR", Life = 20, Strong = 20, Dexterity = 5, Intelligence = 5 }) ;
 
-            listProfession.Add(new Domain.Entities.Profession { ProfessionName = "THIEF", Life = 15, Strong = 4, Dexterity = 10, Intelligence = 4 });
+            listProfession.Add(new Domain.Entities.Profession { Id = 2, ProfessionName = "THIEF", Life = 15, Strong = 4, Dexterity = 10, Intelligence = 4 });
 
-            listProfession.Add(new Domain.Entities.Profession { ProfessionName = "MAGE", Life = 12, Strong = 5, Dexterity = 6, Intelligence = 10 });
+            listProfession.Add(new Domain.Entities.Profession { Id = 3, ProfessionName = "MAGE", Life = 12, Strong = 5, Dexterity = 6, Intelligence = 10 });
 
 
             return listProfession;

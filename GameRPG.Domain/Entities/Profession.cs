@@ -6,6 +6,7 @@ namespace GameRPG.Domain.Entities
 {
     public class Profession : Attributes
     {
+        public int Id { get; set; }
         public string ProfessionName { get; set; }
     }
 }
