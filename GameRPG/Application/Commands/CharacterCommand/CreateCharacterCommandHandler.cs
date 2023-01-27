@@ -29,9 +29,9 @@ namespace GameRPG.Application.Commands.CharacterCommand
 
             var listCharacter = await _characterRepository.GetAllCharacter();
 
-            listCharacter.Add(character);
-
             character.AddId(listCharacter);
+
+            listCharacter.Add(character);
 
             await _characterRepository.CreateCharacter(listCharacter);
 

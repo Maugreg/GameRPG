@@ -21,47 +21,90 @@ namespace GameRPG.Application.Commands.BattleCommands
         {
             var character1 = await  _characterRepository.GetCharacterById(request.IdCharacter1);
             var character2 = await _characterRepository.GetCharacterById(request.IdCharacter2);
+            var log = new List<string>();
 
-            character1.GenerateSpeed(0, character1.Profession.Velocity);
-            character2.GenerateSpeed(0, character2.Profession.Velocity);
+            while (true)
+            {
+                character1.GenerateSpeed(0, character1.Profession.Velocity);
+                character2.GenerateSpeed(0, character2.Profession.Velocity);
 
-            character1.GenerateAttack(0, character1.Profession.Attack);
-            character2.GenerateAttack(0, character2.Profession.Attack);
+                if (!character1.Profession.Velocity.Equals(character2.Profession.Velocity)) 
+                break;
+            }
 
-            InitialAtack(character1, character2);
 
 
-            int i = 0;
+            var logInitialAtack = InitialAtack(character1, character2);
+            log.Add(logInitialAtack);
 
-            while (i < 10) // condition
+
+            while (true)
             {
                 if(character1.IsAttack)
                 {
-                    character2.RemoveLife(character1.Profession.Attack);
+                    var damage = GenerateAttack(0, character1.Profession.Attack);
+                    if(character2.RemoveLife(damage) <= 0)
+                    {
+                        character2.Profession.Life = 0;
+                        var logAttackFinish = $"{character1.Name} atacou {character2.Name} com {damage} de dano, {character2.Name} com {character2.Profession.Life} pontos de vida restantes";
+                        log.Add(logAttackFinish);
+
+                        var logWin = $"{character1.Name} venceu a batalha! {character1.Name} ainda tem {character1.Profession.Life} pontos de vida restantes!";
+                        log.Add(logWin);
+
+                        break;
+                    }
                     character1.IsAttack = false;
                     character2.IsAttack = true;
+
+                    var logAttack = $"{character1.Name} atacou {character2.Name} com {damage} de dano, {character2.Name} com {character2.Profession.Life} pontos de vida restantes";
+                    log.Add(logAttack);
                 }
                 else
                 {
-                    character1.RemoveLife(character1.Profession.Attack);
+                    var damage = GenerateAttack(0, character2.Profession.Attack);
+                    if (character1.RemoveLife(damage) <= 0)
+                    {
+                        character1.Profession.Life = 0;
+                        var logAttackFinish = $"{character2.Name} atacou {character1.Name} com {damage} de dano, {character1.Name} com {character1.Profession.Life} pontos de vida restantes";
+                        log.Add(logAttackFinish);
+
+                        var logWin = $"{character2.Name} venceu a batalha!{character2.Name} ainda tem {character2.Profession.Life} pontos de vida restantes!";
+                        log.Add(logWin);
+
+                        break;
+                    }
+
                     character2.IsAttack = false;
                     character1.IsAttack = true;
+
+                    var logAttack = $"{character2.Name} atacou {character1.Name} com {damage} de dano, {character1.Name} com {character2.Profession.Life} pontos de vida restantes";
+                    log.Add(logAttack);
                 }
+
             }
 
-            return new List<string>();
+            return log;
         }
 
-        private void InitialAtack(Character character1, Character character2)
+        private string InitialAtack(Character character1, Character character2)
         {
             if (character1.Profession.Velocity > character2.Profession.Velocity)
             {
                 character1.IsAttack = true;
+                return $"{character1.Name} Velocidade: {character1.Profession.Velocity} foi mais veloz que o {character2.Name} Velocidade: {character2.Profession.Velocity}, e irá começar!";
             }
             else
             {
                 character2.IsAttack = true;
+                return $"{character2.Name} Velocidade: {character2.Profession.Velocity} foi mais veloz que o {character1.Name} Velocidade: { character1.Profession.Velocity}, e irá começar!";
             }
+        }
+
+        private int GenerateAttack(int min, int max)
+        {
+            Random rnd = new Random();
+            return rnd.Next(min, max);
         }
     }
 }

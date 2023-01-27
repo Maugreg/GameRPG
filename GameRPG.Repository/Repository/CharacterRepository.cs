@@ -43,7 +43,7 @@ namespace GameRPG.Repository.Repository
             var cacheExpiryOptions = new MemoryCacheEntryOptions
             {
                 AbsoluteExpiration = DateTime.Now.AddMinutes(30),
-                SlidingExpiration = TimeSpan.FromMinutes(2)
+                SlidingExpiration = TimeSpan.FromMinutes(30)
             };
             _cache.Set(_cacheKey, character, cacheExpiryOptions);
         }

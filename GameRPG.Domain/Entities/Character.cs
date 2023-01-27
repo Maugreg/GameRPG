@@ -27,7 +27,7 @@ namespace GameRPG.Domain.Entities
             }
             else
             {
-                var lastId = characters.First();
+                var lastId = characters.Last();
                 this.Id = lastId.Id + 1;
             }
         }
@@ -38,15 +38,10 @@ namespace GameRPG.Domain.Entities
             Profession.Velocity = rnd.Next(min, max);
         }
 
-        public void GenerateAttack(int min, int max)
-        {
-            Random rnd = new Random();
-            Profession.Attack = rnd.Next(min, max);
-        }
 
-        public void RemoveLife(int Attack)
+        public int RemoveLife(int Attack)
         {
-            this.Profession.Life = this.Profession.Life - Attack;
+           return this.Profession.Life = this.Profession.Life - Attack;
         }
 
     }
