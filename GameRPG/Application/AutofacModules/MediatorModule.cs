@@ -20,6 +20,9 @@ namespace GameRPG.Application.AutofacModules
             builder.RegisterAssemblyTypes(typeof(GetCharacterCommand).GetTypeInfo().Assembly)
         .AsClosedTypesOf(typeof(IRequestHandler<,>));
 
+            builder.RegisterAssemblyTypes(typeof(CreateCharacterCommand).GetTypeInfo().Assembly)
+        .AsClosedTypesOf(typeof(IRequestHandler<,>));
+
 
             builder.Register<ServiceFactory>(context =>
             {

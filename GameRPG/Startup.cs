@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 using GameRPG.Infrastructure;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace GameRPG
 {
@@ -82,7 +83,6 @@ namespace GameRPG
             });
             #endregion
 
-            services.AddMemoryCache();
 
             var container = new ContainerBuilder();
             container.Populate(services);

@@ -2,6 +2,7 @@
 using GameRPG.Application.Commands.ProfessionCommands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Linq;
 using System.Net;
@@ -32,6 +33,24 @@ namespace GameRPG.Controllers
             var commandResult = await _mediator.Send(new GetCharacterCommand()).ConfigureAwait(false);
 
             if (!commandResult.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(commandResult);
+        }
+
+        [HttpGet("Id")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        public async Task<IActionResult> GetCharacter(int Id)
+        {
+
+            var commandResult = await _mediator.Send(new GetCharacterByIdCommand() { Id = Id }).ConfigureAwait(false);
+
+            if (commandResult.Id.Equals(0))
             {
                 return NotFound();
             }

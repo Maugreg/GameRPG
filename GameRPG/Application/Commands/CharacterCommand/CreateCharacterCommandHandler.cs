@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
 using MediatR;
+using System.Linq;
 
 namespace GameRPG.Application.Commands.CharacterCommand
 {
@@ -22,9 +23,19 @@ namespace GameRPG.Application.Commands.CharacterCommand
         public async Task<int> Handle(CreateCharacterCommand request, CancellationToken cancellationToken)
         {
 
-            var entity = await _professionRepository.GetById(request.ProfessionId);
+            var entityProfession = await _professionRepository.GetById(request.ProfessionId);
 
-            return 1;
+            Character character = new Character(entityProfession, request.Name);
+
+            var listCharacter = await _characterRepository.GetAllCharacter();
+
+            listCharacter.Add(character);
+
+            character.AddId(listCharacter);
+
+            await _characterRepository.CreateCharacter(listCharacter);
+
+            return character.Id;
         }
     }
 }

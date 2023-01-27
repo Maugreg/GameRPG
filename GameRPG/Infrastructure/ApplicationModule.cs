@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using GameRPG.Domain.Interfaces;
 using GameRPG.Repository.Repository;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace GameRPG.Infrastructure
 {
@@ -8,15 +9,15 @@ namespace GameRPG.Infrastructure
     {
         protected override void Load(ContainerBuilder builder)
         {
+
             #region Repository
             builder.RegisterType<ProfessionRepository>()
                      .As<IProfessionRepository>()
                      .InstancePerLifetimeScope();
 
             builder.RegisterType<CharacterRepository>()
-         .As<ICharacterRepository>()
-         .InstancePerLifetimeScope();
-
+                     .As<ICharacterRepository>()
+                     .InstancePerLifetimeScope();
             #endregion
 
         }

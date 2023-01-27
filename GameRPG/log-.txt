@@ -72,3 +72,66 @@
 2023-01-26 20:22:03.017 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 20:22:03]
 2023-01-26 20:22:03.029 -03:00 [Information] Log adicionado na aplicação.
 2023-01-26 20:22:03.029 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 20:53:59.404 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 20:53:59]
+2023-01-26 20:53:59.423 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 20:53:59.423 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 20:57:29.049 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 20:57:29]
+2023-01-26 20:57:29.066 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 20:57:29.066 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:01:46.479 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:01:46]
+2023-01-26 21:01:46.494 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:01:46.495 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:04:57.330 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:04:57]
+2023-01-26 21:04:57.350 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:04:57.350 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:08:03.230 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:08:03]
+2023-01-26 21:08:03.241 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:08:03.241 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:09:25.649 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:09:25]
+2023-01-26 21:09:25.662 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:09:25.662 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:12:44.692 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:12:44]
+2023-01-26 21:12:44.708 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:12:44.708 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:16:09.612 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:16:09]
+2023-01-26 21:16:09.631 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:16:09.631 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:18:33.073 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:18:33]
+2023-01-26 21:18:33.099 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:18:33.099 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:20:29.963 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:20:29]
+2023-01-26 21:20:29.974 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:20:29.974 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:21:05.233 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:21:05]
+2023-01-26 21:21:05.279 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:21:05.279 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:22:22.093 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:22:22]
+2023-01-26 21:22:22.109 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:22:22.109 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:23:12.028 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:23:12]
+2023-01-26 21:23:12.040 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:23:12.040 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:26:07.119 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:26:07]
+2023-01-26 21:26:07.140 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:26:07.140 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 21:35:40.383 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 21:35:40]
+2023-01-26 21:35:40.394 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 21:35:40.394 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:04:52.316 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:04:52]
+2023-01-26 22:04:52.328 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:04:52.328 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:07:04.972 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:07:04]
+2023-01-26 22:07:04.989 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:07:04.989 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:09:54.367 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:09:54]
+2023-01-26 22:09:54.379 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:09:54.379 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:13:11.062 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:13:11]
+2023-01-26 22:13:11.080 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:13:11.080 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:14:36.719 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:14:36]
+2023-01-26 22:14:36.728 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:14:36.728 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-26 22:28:06.252 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [26/01/2023 22:28:06]
+2023-01-26 22:28:06.263 -03:00 [Information] Log adicionado na aplicação.
+2023-01-26 22:28:06.263 -03:00 [Information] Adicionado injeção de dependencia na aplicação.

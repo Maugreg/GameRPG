@@ -13,6 +13,8 @@ namespace GameRPG.Domain.Interfaces
 {
     public interface ICharacterRepository
     {
-         public Task<List<Character>> GetAllCharacter();
+        public Task<List<Character>> GetAllCharacter();
+        public Task CreateCharacter(List<Character> character);
+        public Task<Character> GetCharacterById(int Id);
     }
 }
