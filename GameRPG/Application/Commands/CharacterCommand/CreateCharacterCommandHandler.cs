@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using MediatR;
 using System.Linq;
+using Serilog;
+using GameRPG.Application.Commands.BattleCommands;
 
 namespace GameRPG.Application.Commands.CharacterCommand
 {
@@ -12,16 +14,18 @@ namespace GameRPG.Application.Commands.CharacterCommand
     {
         private readonly ICharacterRepository _characterRepository;
         private readonly IProfessionRepository _professionRepository;
+        private readonly ILogger _logger;
 
-
-        public CreateCharacterCommandHandler(ICharacterRepository characterRepository, IProfessionRepository professionRepository)
+        public CreateCharacterCommandHandler(ICharacterRepository characterRepository, IProfessionRepository professionRepository, ILogger logger)
         {
             _characterRepository = characterRepository;
             _professionRepository = professionRepository;
+            _logger = logger.ForContext<CreateCharacterCommandHandler>();
         }
 
         public async Task<int> Handle(CreateCharacterCommand request, CancellationToken cancellationToken)
         {
+            _logger.Information("Begin Create Character"); 
 
             var entityProfession = await _professionRepository.GetById(request.ProfessionId);
 
@@ -31,9 +35,13 @@ namespace GameRPG.Application.Commands.CharacterCommand
 
             character.AddId(listCharacter);
 
+            _logger.Information($"Character AddId {character.Id}");
+
             listCharacter.Add(character);
 
             await _characterRepository.CreateCharacter(listCharacter);
+
+            _logger.Information("Finish Create Character");
 
             return character.Id;
         }

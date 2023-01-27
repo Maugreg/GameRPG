@@ -2,6 +2,7 @@
 using GameRPG.Domain.Entities;
 using GameRPG.Domain.Interfaces;
 using MediatR;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -12,9 +13,12 @@ namespace GameRPG.Application.Commands.BattleCommands
     public class BattleCommandHandler : IRequestHandler<BattleCommand, List<string>>
     {
         private readonly ICharacterRepository _characterRepository;
-        public BattleCommandHandler(ICharacterRepository characterRepository)
+        private readonly ILogger _logger;
+
+        public BattleCommandHandler(ICharacterRepository characterRepository, ILogger logger)
         {
             _characterRepository = characterRepository;
+            _logger = logger.ForContext<BattleCommandHandler>();
         }
 
         async Task<List<string>> IRequestHandler<BattleCommand, List<string>>.Handle(BattleCommand request, CancellationToken cancellationToken)
@@ -36,6 +40,7 @@ namespace GameRPG.Application.Commands.BattleCommands
 
             var logInitialAtack = InitialAtack(character1, character2);
             log.Add(logInitialAtack);
+            _logger.Information(logInitialAtack);
 
 
             while (true)
@@ -48,9 +53,11 @@ namespace GameRPG.Application.Commands.BattleCommands
                         character2.Profession.Life = 0;
                         var logAttackFinish = $"{character1.Name} atacou {character2.Name} com {damage} de dano, {character2.Name} com {character2.Profession.Life} pontos de vida restantes";
                         log.Add(logAttackFinish);
+                        _logger.Information(logAttackFinish);
 
                         var logWin = $"{character1.Name} venceu a batalha! {character1.Name} ainda tem {character1.Profession.Life} pontos de vida restantes!";
                         log.Add(logWin);
+                        _logger.Information(logWin);
 
                         break;
                     }
@@ -59,6 +66,7 @@ namespace GameRPG.Application.Commands.BattleCommands
 
                     var logAttack = $"{character1.Name} atacou {character2.Name} com {damage} de dano, {character2.Name} com {character2.Profession.Life} pontos de vida restantes";
                     log.Add(logAttack);
+                    _logger.Information(logAttack);
                 }
                 else
                 {
@@ -68,9 +76,11 @@ namespace GameRPG.Application.Commands.BattleCommands
                         character1.Profession.Life = 0;
                         var logAttackFinish = $"{character2.Name} atacou {character1.Name} com {damage} de dano, {character1.Name} com {character1.Profession.Life} pontos de vida restantes";
                         log.Add(logAttackFinish);
+                        _logger.Information(logAttackFinish);
 
                         var logWin = $"{character2.Name} venceu a batalha!{character2.Name} ainda tem {character2.Profession.Life} pontos de vida restantes!";
                         log.Add(logWin);
+                        _logger.Information(logWin);
 
                         break;
                     }
@@ -80,6 +90,7 @@ namespace GameRPG.Application.Commands.BattleCommands
 
                     var logAttack = $"{character2.Name} atacou {character1.Name} com {damage} de dano, {character1.Name} com {character2.Profession.Life} pontos de vida restantes";
                     log.Add(logAttack);
+                    _logger.Information(logAttack);
                 }
 
             }
