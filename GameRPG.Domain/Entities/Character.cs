@@ -16,7 +16,7 @@ namespace GameRPG.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public Profession Profession { get; set; }
-        public int IsAttack { get; set; }
+        public bool IsAttack { get; set; }
 
 
         public void AddId(List<Character> characters)
@@ -31,5 +31,23 @@ namespace GameRPG.Domain.Entities
                 this.Id = lastId.Id + 1;
             }
         }
+
+        public void GenerateSpeed(int min, int max)
+        {
+            Random rnd = new Random();
+            Profession.Velocity = rnd.Next(min, max);
+        }
+
+        public void GenerateAttack(int min, int max)
+        {
+            Random rnd = new Random();
+            Profession.Attack = rnd.Next(min, max);
+        }
+
+        public void RemoveLife(int Attack)
+        {
+            this.Profession.Life = this.Profession.Life - Attack;
+        }
+
     }
 }
