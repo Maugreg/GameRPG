@@ -47,8 +47,6 @@ namespace GameRPG.Application.Commands.BattleCommands
                     character2.IsAttack = false;
                     character1.IsAttack = true;
                 }
-
-                character1.IsAttack = false;
             }
 
             return new List<string>();
