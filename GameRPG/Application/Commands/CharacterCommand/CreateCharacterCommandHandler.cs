@@ -20,7 +20,7 @@ namespace GameRPG.Application.Commands.CharacterCommand
         {
             _characterRepository = characterRepository;
             _professionRepository = professionRepository;
-            _logger = logger.ForContext<CreateCharacterCommandHandler>();
+            _logger = logger;
         }
 
         public async Task<int> Handle(CreateCharacterCommand request, CancellationToken cancellationToken)

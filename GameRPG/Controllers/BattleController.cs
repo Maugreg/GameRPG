@@ -29,7 +29,7 @@ namespace GameRPG.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public async Task<IActionResult> CreateCharacter(BattleCommand request)
+        public async Task<IActionResult> Battle(BattleCommand request)
         {
 
             var commandResult = await _mediator.Send(request).ConfigureAwait(false);
