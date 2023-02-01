@@ -40,7 +40,7 @@ namespace GameRPG.Controllers
             return Ok(commandResult);
         }
 
-        [HttpGet("Id")]
+        [HttpGet("{Id}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]

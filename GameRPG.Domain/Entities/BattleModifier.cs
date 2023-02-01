@@ -6,7 +6,7 @@ namespace GameRPG.Domain.Entities
 {
     public class BattleModifier
     {
-        public int Attack { get; set; }
-        public int Velocity { get; set; }
+        public double Attack { get; set; }
+        public double Velocity { get; set; }
     }
 }

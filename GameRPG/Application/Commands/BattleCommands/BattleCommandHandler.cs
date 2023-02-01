@@ -29,8 +29,8 @@ namespace GameRPG.Application.Commands.BattleCommands
 
             while (true)
             {
-                character1.GenerateSpeed(0, character1.Profession.Velocity);
-                character2.GenerateSpeed(0, character2.Profession.Velocity);
+                character1.GenerateSpeed(0, (int)character1.Profession.Velocity);
+                character2.GenerateSpeed(0, (int)character2.Profession.Velocity);
 
                 if (!character1.Profession.Velocity.Equals(character2.Profession.Velocity)) 
                 break;
@@ -47,7 +47,7 @@ namespace GameRPG.Application.Commands.BattleCommands
             {
                 if(character1.IsAttack)
                 {
-                    var damage = GenerateAttack(0, character1.Profession.Attack);
+                    var damage = GenerateAttack(0, (int)character1.Profession.Attack);
                     if(character2.RemoveLife(damage) <= 0)
                     {
                         character2.Profession.Life = 0;
@@ -70,7 +70,7 @@ namespace GameRPG.Application.Commands.BattleCommands
                 }
                 else
                 {
-                    var damage = GenerateAttack(0, character2.Profession.Attack);
+                    var damage = GenerateAttack(0, (int)character2.Profession.Attack);
                     if (character1.RemoveLife(damage) <= 0)
                     {
                         character1.Profession.Life = 0;

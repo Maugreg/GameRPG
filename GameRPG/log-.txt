@@ -183,3 +183,53 @@
 2023-01-27 14:02:43.180 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [27/01/2023 14:02:43]
 2023-01-27 14:02:43.191 -03:00 [Information] Log adicionado na aplicação.
 2023-01-27 14:02:43.192 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-31 19:21:31.988 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [31/01/2023 19:21:31]
+2023-01-31 19:21:32.003 -03:00 [Information] Log adicionado na aplicação.
+2023-01-31 19:21:32.003 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-31 19:22:11.610 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [31/01/2023 19:22:11]
+2023-01-31 19:22:11.624 -03:00 [Information] Log adicionado na aplicação.
+2023-01-31 19:22:11.624 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-31 19:24:33.578 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [31/01/2023 19:24:33]
+2023-01-31 19:24:33.594 -03:00 [Information] Log adicionado na aplicação.
+2023-01-31 19:24:33.594 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-01-31 19:28:43.705 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [31/01/2023 19:28:43]
+2023-01-31 19:28:43.716 -03:00 [Information] Log adicionado na aplicação.
+2023-01-31 19:28:43.716 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:21:53.321 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:21:53]
+2023-02-01 13:21:53.331 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:21:53.331 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:22:47.173 -03:00 [Information] Begin Create Character
+2023-02-01 13:22:47.176 -03:00 [Information] Character AddId 1
+2023-02-01 13:22:47.180 -03:00 [Information] Finish Create Character
+2023-02-01 13:24:47.141 -03:00 [Information] Begin Create Character
+2023-02-01 13:24:47.143 -03:00 [Information] Character AddId 2
+2023-02-01 13:24:47.146 -03:00 [Information] Finish Create Character
+2023-02-01 13:24:59.143 -03:00 [Information] string Velocidade: 18 foi mais veloz que o dasdasd Velocidade: 4, e irá começar!
+2023-02-01 13:25:01.211 -03:00 [Information] string atacou dasdasd com 20 de dano, dasdasd com 0 pontos de vida restantes
+2023-02-01 13:25:01.211 -03:00 [Information] string venceu a batalha! string ainda tem 20 pontos de vida restantes!
+2023-02-01 13:42:25.552 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:42:25]
+2023-02-01 13:42:25.570 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:42:25.570 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:44:36.219 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:44:36]
+2023-02-01 13:44:36.231 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:44:36.231 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:48:11.441 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:48:11]
+2023-02-01 13:48:11.469 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:48:11.469 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:52:44.247 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:52:44]
+2023-02-01 13:52:44.266 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:52:44.267 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:53:38.810 -03:00 [Information] Log iniciado para aplicação:[GameRPG] da data de: [01/02/2023 13:53:38]
+2023-02-01 13:53:38.824 -03:00 [Information] Log adicionado na aplicação.
+2023-02-01 13:53:38.825 -03:00 [Information] Adicionado injeção de dependencia na aplicação.
+2023-02-01 13:53:58.366 -03:00 [Information] Begin Create Character
+2023-02-01 13:53:58.371 -03:00 [Information] Character AddId 1
+2023-02-01 13:53:58.376 -03:00 [Information] Finish Create Character
+2023-02-01 13:54:08.598 -03:00 [Information] Begin Create Character
+2023-02-01 13:54:08.599 -03:00 [Information] Character AddId 2
+2023-02-01 13:54:08.600 -03:00 [Information] Finish Create Character
+2023-02-01 13:54:18.749 -03:00 [Information] string Velocidade: 2 foi mais veloz que o string ff Velocidade: 1, e irá começar!
+2023-02-01 13:54:18.750 -03:00 [Information] string atacou string ff com 3 de dano, string ff com 12 pontos de vida restantes
+2023-02-01 13:54:20.274 -03:00 [Information] string ff atacou string com 4 de dano, string com 12 pontos de vida restantes
+2023-02-01 13:54:20.274 -03:00 [Information] string atacou string ff com 16 de dano, string ff com 0 pontos de vida restantes
+2023-02-01 13:54:20.274 -03:00 [Information] string venceu a batalha! string ainda tem 16 pontos de vida restantes!
