@@ -7,6 +7,7 @@ Visual Studio<br/>
 # Tecnologias
 MediatR<br/> 
 DDD<br/> 
+Exceptions usando Filter<br/> 
 Manipulação de Dados em Memoria: MemoryCache<br/> 
 Serilog - Log guardados em arquivos textos: PastaRaiz/log.txt<br/> 
 Teste de unidade: XUnit<br/> 
